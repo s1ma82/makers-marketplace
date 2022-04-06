@@ -1,0 +1,10 @@
+@import '/src/mixins';
+
+body{
+   color: #fff;
+   background-color: $color-black;
+
+   .container{
+      @include Container(1440px, 25px)
+   }
+}

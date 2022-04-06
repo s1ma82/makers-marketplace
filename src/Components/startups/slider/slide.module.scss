@@ -1,0 +1,57 @@
+@import '/src/mixins';
+
+.slide{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 300px;
+    background: $color-black;
+    border-radius: $border-radius;
+    overflow: hidden;
+    cursor: pointer;
+
+    .content{
+        text-align: left;
+        background: $color-purple;
+        height: 100%;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-left: 10px;
+        
+        &_title{
+            margin: 0;
+            padding: 0;
+        }
+        &_descr{
+            padding: 0;
+        }
+    }
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        background: $color-black;
+        height: 120px;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+
+        &_item{
+            font-weight: 900;
+            p{  
+                font-size: 10px;
+                text-transform: uppercase;
+                padding: 0;
+                margin: 5px 0;
+            }
+            span{
+                display: inline-block;
+                font-size: 26px;
+            }
+        }
+    }
+}

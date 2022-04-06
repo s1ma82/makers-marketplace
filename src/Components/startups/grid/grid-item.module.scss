@@ -1,0 +1,52 @@
+@import '/src/mixins';
+
+.grid_item{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: $color-black;
+    border-radius: $border-radius;
+    overflow: hidden;
+    cursor: pointer;
+
+    .content{
+        text-align: left;
+        background: $color-purple;
+        height: 100%;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-left: 10px;
+        
+        &_title{
+            margin: 0;
+            padding: 0;
+        }
+        &_descr{
+            padding: 0;
+        }
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        background: $color-black;
+        width: 100%;
+
+        &_item{
+            font-weight: 900;
+            width: 33%;
+            p{  
+                font-size: 10px;
+                text-transform: uppercase;
+                padding: 0;
+                margin: 5px 0;
+            }
+            span{
+                display: inline-block;
+                font-size: 26px;
+            }
+        }
+    }
+}

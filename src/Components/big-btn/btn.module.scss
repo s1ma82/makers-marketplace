@@ -1,0 +1,39 @@
+@import '/src/mixins';
+
+.btn {
+  color: #fff;
+    overflow: hidden;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: $font-roboto;
+    letter-spacing: 1.2px;
+    border-radius: $border-radius;
+    background: $color-purple;
+    display: inline-block;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    &:hover {
+      color: #000 !important;
+      background-color: transparent;
+      text-shadow: nthree;
+    }
+    &:hover:before {
+      left: 0%;
+      width: 100%;
+    }
+    &:before {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 0px;
+      z-index: -1;
+      content: '';
+      background: $color-blue;
+      transition: all 0.4s ;
+    }
+}

@@ -1,0 +1,40 @@
+.grid{
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    padding: 0;
+    gap: 45px;
+    grid-auto-rows: minmax(270px, 1fr);
+    transition: .3s;
+
+    &_wrapper{
+        display: block;
+        transform: translateY(-10%);
+        transition: .3s;
+    }
+
+    &_container{
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        transition: .3s;
+
+        &.active{
+            position: static;
+            margin-top: 200px;
+            opacity: 1;
+            transition: .5s;
+
+            .grid{
+                display: grid;
+                &_wrapper{
+                    display: block;
+                    transform: translateY(0);
+                    transition: 1s;
+                }
+            }
+        }
+    }
+
+}

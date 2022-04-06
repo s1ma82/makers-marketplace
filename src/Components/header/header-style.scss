@@ -1,0 +1,13 @@
+@import '/src/mixins';
+.header{
+    margin-top: 20px;
+    padding-left: 100px;
+    text-align: center;    
+    transition: .3s;
+    .wrapper_logo{
+        display: inline-block;
+    }
+    @media screen and (max-width: $media-screen-1) {
+        padding-left: 0;
+    }
+}

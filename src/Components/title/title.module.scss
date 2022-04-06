@@ -1,0 +1,11 @@
+@import '/src/mixins';
+
+.title{
+    color: transparent;
+    background: $bg-image-gradient;
+    background-clip: text;
+    font-family: $font-roboto;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}

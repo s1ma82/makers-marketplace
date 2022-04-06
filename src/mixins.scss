@@ -1,0 +1,34 @@
+// @import './fonts/fonts.css';
+// VARS
+
+    // colors
+        $color-black: #000000;
+        $color-gray: #3B3B3B;
+        $color-purple: #6736DD;
+        $color-blue: #12C3F7 ;
+
+        $bg-image-gradient: linear-gradient(to bottom, #6736DD, #12C3F7 );
+
+
+    // fonts
+        $font-roboto: 'Roboto'; 
+
+    // style
+        $border-radius: 15px;
+
+    // media
+        $media-screen-1: 1024px;
+
+// =====================================================================
+
+// MIXINS
+
+
+    // containers
+        @mixin Container ($width, $padding) {
+            margin: 0 auto;
+            max-width: $width;
+            text-align: center;
+            padding: 0 $padding;
+
+        }

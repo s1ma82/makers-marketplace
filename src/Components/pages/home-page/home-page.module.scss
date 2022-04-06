@@ -1,0 +1,48 @@
+@import '/src/mixins';
+
+.home{
+    margin-left: 100px;
+    transition: .3s;
+
+    &__container{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+        gap: 50px;
+        text-align: left;
+
+        &_btn{
+            margin: auto 0;
+        }
+
+        &_video{
+            grid-area: 1 / 2 / 3 / 3
+
+        }
+
+        @media screen and (max-width: $media-screen-1) {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            max-height: none;
+
+            &_btn{
+                text-align: end;
+            }
+
+            &_video{
+                width: 100%;
+                max-width: 720px;
+                margin: 0 auto;
+            }
+
+        }
+    }
+    @media screen and (max-width: $media-screen-1) {
+        transition: .3s;
+        margin-left: 0;
+    }
+    
+    
+}
