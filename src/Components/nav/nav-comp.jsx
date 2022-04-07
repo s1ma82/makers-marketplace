@@ -7,11 +7,12 @@ const NavComp = () => {
     const [navIconsActive, setNavIconsActive] = useState({homeActive: true})
     const [burgerActive, setBurgerActive] = useState(false);
     document.addEventListener("DOMContentLoaded", () => {
-        if(document.location.pathname === "/makers-marketplace/messanger"){
+        console.log(document.location.hash)
+        if(document.location.hash === "#/messanger"){
             setNavIconsActive({messActive: true})
-        }else if (document.location.pathname === "/makers-marketplace/coffee"){
+        }else if (document.location.hash === "#/coffee"){
             setNavIconsActive({coffeeActive: true})
-        }else if(document.location.pathname === "/makers-marketplace/tags"){
+        }else if(document.location.hash === "#/tags"){
             setNavIconsActive({tagsActive: true})
         }
     })
