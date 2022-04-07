@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import styles from './nav.module.scss'
 import {HomeIcon, TagsIcon, CoffeeIcon, MessIcon} from './nav-icons-comp'
@@ -16,8 +16,15 @@ const NavComp = () => {
             setNavIconsActive({tagsActive: true})
         }
     })
+    if(burgerActive){
+        document.addEventListener('click', e => {
+            if(!e.target.closest('nav')){
+                setBurgerActive(false)
+            }
+        })
+    }
     
-
+    
     function onBurgerClick(){
         if(burgerActive){
             setBurgerActive(false)
