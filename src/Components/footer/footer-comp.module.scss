@@ -1,10 +1,10 @@
 @import '/src/mixins';
 .footer{
-    position: relative;
-    margin-top: 200px;
-    padding-left: 100px;
+    display: inline-block;
     height: 270px;
     transition: .3s;
+    padding-left: 100px;
+    margin-top: 40px;
 
     .content{
         margin-top: 50px;
@@ -45,10 +45,4 @@
         padding-left: 0;
     }
 
-    .madeBy{
-        display: block;
-        position: absolute;
-        right: -142px;
-        bottom: 0;
-    }
 }

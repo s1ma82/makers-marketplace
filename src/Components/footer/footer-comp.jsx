@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './footer-app.module.scss'
+import styles from './footer-comp.module.scss'
 
-const FooterApp = () => {
+const FooterComp = () => {
     const icons = {
         logo: (
             <svg width="265" height="65" viewBox="0 0 843 203" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,11 +41,9 @@ const FooterApp = () => {
                     <a href="#" className={styles.links__item}> © 2019-2020 makersmarketplace.xyz</a>
                 </div>       
             </div>
-            <a href="https://fajarsiddiq.com/" target='_blank'>
-                <img className={styles.madeBy} src={require("./MadeBy.png")} alt="Made by"/>
-            </a>
+            
         </footer>
     );
 }
 
-export default FooterApp;
+export default FooterComp;

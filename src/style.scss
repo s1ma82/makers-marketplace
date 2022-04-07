@@ -3,6 +3,7 @@
 body{
    color: #fff;
    background-color: $color-black;
+   overflow-x: hidden;
 
    .container{
       @include Container(1440px, 25px)

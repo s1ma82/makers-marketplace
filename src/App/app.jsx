@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeaderComp from '../Components/header/header-comp';
 import NavComp from '../Components/nav/nav-comp';
 import HomePageComp from '../Components/pages/home-page/home-page-comp';
-import FooterApp from '../Components/footer/footer-app'
 
 const App = () => {
     return (
@@ -14,7 +13,6 @@ const App = () => {
                 <Routes>
                     <Route path='/makers-marketplace/' element={<HomePageComp/>} />
                 </Routes>
-                <FooterApp/>
             </BrowserRouter>
 
         </>
