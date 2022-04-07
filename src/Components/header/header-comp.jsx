@@ -1,4 +1,6 @@
 import React from 'react';
+import { activeNavItem } from '../../redux/actions';
+import { useDispatch} from 'react-redux';
 import { Link } from 'react-router-dom';
 import './header-style.scss'
 const logo = (
@@ -11,9 +13,10 @@ const logo = (
     </svg>
 )
 const HeaderComp = () => {
+    const dispatch = useDispatch()
     return (
         <header className='header'>
-            <Link to='/' className='wrapper_logo'>{logo}</Link>
+            <Link onClick={() => dispatch(activeNavItem({home: true}))} to='/' className='wrapper_logo'>{logo}</Link>
         </header>
     );
 }

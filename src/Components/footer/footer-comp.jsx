@@ -1,8 +1,11 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { activeNavItem } from '../../redux/actions';
 import styles from './footer-comp.module.scss'
 
 const FooterComp = () => {
+    const dispatch = useDispatch()
     const icons = {
         logo: (
             <svg width="265" height="65" viewBox="0 0 843 203" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +30,7 @@ const FooterComp = () => {
 
     return (
         <footer className={styles.footer}>
-            <Link to='/'>{icons.logo}</Link>
+            <Link onClick={() => dispatch(activeNavItem({home: true}))} to='/'>{icons.logo}</Link>
             <div className={styles.content}>
                 <div className={styles.social}>
                     <a href="#" className={styles.social__item}> {icons.twitter}  </a>
