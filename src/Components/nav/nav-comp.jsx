@@ -33,10 +33,10 @@ const NavComp = () => {
     }
     return (
         <nav className={`${styles.nav} ${checkActive()}`}>
-            <Link className={styles.link} onClick={() => setNavIconsActive({homeActive: true})}  to='/makers-marketplace/'><HomeIcon active={navIconsActive.homeActive}/></Link>
-            <Link className={styles.link} onClick={() => setNavIconsActive({messActive: true})}  to='/makers-marketplace/messanger'><MessIcon active={navIconsActive.messActive}/></Link>
-            <Link className={styles.link} onClick={() => setNavIconsActive({coffeeActive: true})}  to='/makers-marketplace/coffee'><CoffeeIcon active={navIconsActive.coffeeActive}/></Link>
-            <Link className={styles.link} onClick={() => setNavIconsActive({tagsActive: true})}  to='/makers-marketplace/tags'><TagsIcon active={navIconsActive.tagsActive}/></Link>
+            <Link className={styles.link} onClick={() => setNavIconsActive({homeActive: true})}   to='/'><HomeIcon active={navIconsActive.homeActive}/></Link>
+            <Link className={styles.link} onClick={() => setNavIconsActive({messActive: true})}   to='/messanger'><MessIcon active={navIconsActive.messActive}/></Link>
+            <Link className={styles.link} onClick={() => setNavIconsActive({coffeeActive: true})} to='/coffee'><CoffeeIcon active={navIconsActive.coffeeActive}/></Link>
+            <Link className={styles.link} onClick={() => setNavIconsActive({tagsActive: true})}   to='/tags'><TagsIcon active={navIconsActive.tagsActive}/></Link>
 
             <div id={styles.burger} className={checkActive()} onClick={onBurgerClick}><span></span></div>
         </nav>

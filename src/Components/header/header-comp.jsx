@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header-style.scss'
 const logo = (
     <svg width="265" height="65" viewBox="0 0 843 203" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +13,7 @@ const logo = (
 const HeaderComp = () => {
     return (
         <header className='header'>
-            <div className='wrapper_logo'>{logo}</div>
+            <Link to='/' className='wrapper_logo'>{logo}</Link>
         </header>
     );
 }
