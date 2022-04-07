@@ -54,10 +54,10 @@ const NavComp = () => {
     }
     return (
         <nav className={`${styles.nav} ${checkActive()}`}>
-            <Link className={styles.link}to='/makers-markeplace'>{icons.home}</Link>
-            <Link className={styles.link}to='/makers-markeplace/messanger'>{icons.mess}</Link>
-            <Link className={styles.link}to='/makers-markeplace/tags'>{icons.tags}</Link>
-            <Link className={styles.link}to='/makers-markeplace/coffee'>{icons.coffee}</Link>
+            <Link className={styles.link}to='/makers-marketplace/'>{icons.home}</Link>
+            <Link className={styles.link}to='/makers-marketplace/messanger'>{icons.mess}</Link>
+            <Link className={styles.link}to='/makers-marketplace/tags'>{icons.tags}</Link>
+            <Link className={styles.link}to='/makers-marketplace/coffee'>{icons.coffee}</Link>
 
             <div id={styles.burger} className={checkActive()} onClick={onBurgerClick}><span></span></div>
         </nav>

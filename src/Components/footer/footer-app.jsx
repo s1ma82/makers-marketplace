@@ -27,7 +27,7 @@ const FooterApp = () => {
 
     return (
         <footer className={styles.footer}>
-            <Link to='/'>{icons.logo}</Link>
+            <Link to='/makers-marketplace/'>{icons.logo}</Link>
             <div className={styles.content}>
                 <div className={styles.social}>
                     <a href="#" className={styles.social__item}> {icons.twitter}  </a>

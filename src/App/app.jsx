@@ -12,7 +12,7 @@ const App = () => {
                 <HeaderComp/>
                 <NavComp/>
                 <Routes>
-                    <Route path='/makers-markeplace' element={<HomePageComp/>} />
+                    <Route path='/makers-marketplace/' element={<HomePageComp/>} />
                 </Routes>
                 <FooterApp/>
             </BrowserRouter>
