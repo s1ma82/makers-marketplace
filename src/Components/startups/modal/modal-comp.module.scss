@@ -11,11 +11,13 @@
     height: 600px;
     width: 80%;
     max-width: 1000px;
-    min-width: 500px;
+    // min-width: 500px;
     background: $color-black;
     border-radius: $border-radius;
     overflow: hidden;
     letter-spacing: .7px;
+    padding: 10px;
+
 
     .content{
         background: $color-purple;
@@ -34,20 +36,21 @@
         width: 400px;
         font-family: $font-roboto;
         
-
-        &_item{
-            margin: 20px auto 0 auto;
-            width: 80%;
-            font-weight: 900;
-            p{  
-                font-size: 10px;
-                text-transform: uppercase;
-                padding: 0;
-                margin: 0;
-            }
-            span{
-                font-size: 26px;
-                display: inline-block;
+        &_stats{
+            &_item{
+                margin: 20px auto 0 auto;
+                width: 80%;
+                font-weight: 900;
+                p{  
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    padding: 0;
+                    margin: 0;
+                }
+                span{
+                    font-size: 26px;
+                    display: inline-block;
+                }
             }
         }
 
@@ -55,19 +58,23 @@
             margin: 20px auto 0 auto;
             font-size: 60px;
         }
-        .title{
-            font-size: 22px;
-            margin: 0;
-            padding: 0;
-        }
-        .descr{
-            text-transform: none;
-            color: #ffffff70;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 13px;
-            letter-spacing: .7px;
-            padding: 0;
+        &_item{
+            margin: 20px auto 0 auto;
+            width: 80%;
+            .title{
+                font-size: 22px;
+                margin: 0;
+                padding: 0;
+            }
+            .descr{
+                text-transform: none;
+                color: #ffffff70;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                font-size: 13px;
+                letter-spacing: .7px;
+                padding: 0;
+            }
         }
     }
     &_hidebtn{
@@ -132,6 +139,43 @@
         content: '';
         background: $color-blue;
         transition: all 0.4s ;
+        }
+    }
+
+    @media screen and (max-width: $media-screen-1) {
+        width: 90%;
+        height: 700px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .info{
+            padding: 0;
+            align-items: left;
+            height: auto;
+            width: 100%;
+            .price{
+                margin: 0 auto;
+            }
+            &_stats{
+                display: flex;
+
+                &_item{
+                    width: auto;
+                    // margin: 0;
+                }
+            }
+            .btn{
+                margin: 20px auto;
+            }
+        }
+    }
+    @media screen and (max-widtH:  $media-screen-3) {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+
+        .info{
+            height: 50%;
         }
     }
 }
