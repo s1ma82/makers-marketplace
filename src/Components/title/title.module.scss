@@ -8,4 +8,17 @@
     font-size: 48px;
     font-weight: 900;
     margin: 0;
+    transition: .3s;
+    word-break: normal;
+
+
+    @media screen and (max-width: $media-screen-2) {
+        text-align: center;
+        transition: .3s;
+    }
+    @media screen and (max-width: $media-screen-3) {
+        font-size: 35px;
+        transition: .3s;
+    }
+
 }
