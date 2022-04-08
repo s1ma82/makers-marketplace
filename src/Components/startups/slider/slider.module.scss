@@ -12,6 +12,7 @@
     left: 0;
     transition: .6s;
 
+
     // transform: translate(-100%);
 
 
@@ -89,8 +90,18 @@
             right: 0;
             transform: translate(50%, -50%) rotate(180deg);
         }
+
+        
+
     }
     &.active{
         display: flex;
+    }
+    @media screen and (max-width: $media-screen-3) {
+        display: none;
+
+        &_wrapper, &_arrow{
+            display: none;
+        }
     }
 }
