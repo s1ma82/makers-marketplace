@@ -5,13 +5,15 @@ import TitleComp from '../../title/title-comp';
 import styles from './home-page.module.scss'
 import VideoComp from '../../video-container/video-comp';
 import StartupsApp from '../../startups/startups-app';
+import HeaderComp from '../../header/header-comp'
 import MadeByComp from '../../made-by/made-by-comp';
 import FooterComp from '../../footer/footer-comp'
 
 const HomePageComp = () => {
     
     return (
-        <>
+        <>  
+            <HeaderComp/>
             <main className={styles.home}>
                 <div className={styles.home__container}>
                    {/* <div className={styles.home__container_content}> */}

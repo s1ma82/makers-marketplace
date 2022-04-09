@@ -49,7 +49,6 @@ const NavComp = () => {
             <Link className={styles.link} onClick={() => dispatch(activeNavItem({mess: true}))}   to='/messanger'><MessIcon active={state.mess}/></Link>
             <Link className={styles.link} onClick={() => dispatch(activeNavItem({coffee: true}))} to='/coffee'><CoffeeIcon active={state.coffee}/></Link>
             <Link className={styles.link} onClick={() => dispatch(activeNavItem({tags: true}))}   to='/tags'><TagsIcon active={state.tags}/></Link>
-
             <div id={styles.burger} className={checkActive()} onClick={onBurgerClick}><span></span></div>
         </nav>
     );
